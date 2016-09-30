@@ -1,0 +1,7 @@
+To check a cert
+
+openssl x509 -in  ddx-ds-sit.cercd 
+
+openssl x509 -in bpmetis-sec-31132/ssl/etis.cer -text -noout 
+
+
