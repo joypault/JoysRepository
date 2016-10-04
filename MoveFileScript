@@ -1,0 +1,27 @@
+#!/usr/bin/ksh
+# setting temp and final directories
+tmp=/tmp
+final=/opt/ers400/servers/collectdetails/
+# using find command to get the conf folder
+find /opt/ers400/servers/ -type d -name "conf" -print | while read dir
+# pushing to a loop to get the .inc file under conf directory
+do
+    print "$dir"
+    cd "${dir}"
+    print " after first print"
+    find $dir/ -name "*.inc" -print | while read file
+  do
+       print "$file" 
+       cp ${file} ${tmp}
+   done
+#getting the file with .conf under conf directory
+    find $dir/ -name "*.conf" -print | while read file1
+        do
+             print "$file1"
+             cp ${file1} ${tmp}
+        done
+#removing zero byte files and copying to final destination, removing the tmp files.
+      find "${tmp}" -type f -size +0 -print0 | xargs -0 -I % cp % "${final}"
+      rm "${tmp}"/*.conf
+      rm "${tmp}"/*.inc      
+done
