@@ -1,4 +1,5 @@
 #!/usr/bin/ksh
+# This script copies *.inc and *.conf from config directory of apache instances, move to temporary folder, move files from temporary folder to final folder and remove the files from temp directory
 # setting temp and final directories
 tmp=/tmp
 final=/opt/ers400/servers/collectdetails/
