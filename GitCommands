@@ -64,6 +64,8 @@ To show remote repository details
   To delete a remote branch
   git push origin --delete <branch name>
   
+  *******************************************************************************************************************************
+  
 
   
   
