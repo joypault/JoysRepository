@@ -1,0 +1,70 @@
+==============================================================================================================================
+Commands to clone a remote repository to local machine, commit the changes and push the changes to master branch on the remote
+repository.
+==============================================================================================================================
+To clone a remote repository
+				git clone <url for the remote repo> .
+        
+To show remote repository details        
+        git remote -v
+        
+To show remote repository details
+        git branch -a
+        
+ To show the diff before add or commit
+        git diff
+       
+ To show the status
+        git status
+        
+ To add the new or modified files 
+        git add -A
+        
+ To commit the changes
+        git commit -m "comment"
+        
+ To pull the any modified files from master
+        git pull origin master
+        
+ To push the files ( committed files ) to the master repository
+        git push origin master
+        
+ Note: origin stands for remote repository  
+ ==============================================================================================================================
+ 
+ ******************************************************************************************************************************
+ Normall workflow  ( clone from the master to a branch, make changes to the branch, push the branch to remote repository, merge
+ branch with master, delete from local and remote  
+ ******************************************************************************************************************************
+ 
+  git branch <branch name>
+ 
+  git checkout <branch name>
+  
+  git branch -> shows the branches and the branch which are being worked on with *
+  
+  To push a branch to remote repository
+  git push -u orgin <branch name > where branch name is the local branch
+  
+  Use the following command to merge the branch with master
+  git checkout master
+  
+  git pull origin master
+  
+  git branch --merged. ( for information only )
+  
+  git merge <branch name>
+  git push origin master
+  
+  To delete a local branch 
+  git branch --merged ( for information only )
+  git branch -d <branch name>
+  git branch -a ( show remote repository details; for information only )
+  
+  To delete a remote branch
+  git push origin --delete <branch name>
+  
+
+  
+  
+ 
