@@ -33,7 +33,7 @@ To show remote repository details
  ==============================================================================================================================
  
  ******************************************************************************************************************************
- Normall workflow  ( clone from the master to a branch, make changes to the branch, push the branch to remote repository, merge
+ Normal workflow  ( clone from the master to a branch, make changes to the branch, push the branch to remote repository, merge
  branch with master, delete from local and remote  
  ******************************************************************************************************************************
  
